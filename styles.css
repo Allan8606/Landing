@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./img/designer_1.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 1490px 100vh;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.125rem;
+    margin-left: 165px;
+    margin-right: 165px;
+}
+
+header h1 {
+    color: #111;
+    font-size: 1.65rem;
+    font-weight: 900;
+}
+
+.comprar {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #111b47;
+    padding: 8px 40px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+}
+.comprar:hover {
+    background: #505f98;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.75rem;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #505f98;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+}
+.menu a:hover {
+    background: #505f98;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+main {
+    max-width: 590px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 18.75rem;
+    margin-left: 10.35rem;
+}
+main h1 {
+    grid-column: 1 / -1;
+    font-size: 3.15rem;
+    color: #111;
+    font-weight: 500;
+}
+main p {
+    grid-column: 1 / -1;
+    color: #505f98;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+main a {
+    text-decoration: none;
+    margin-top: 50px;
+    border-radius: 3px;
+}
+
+.comprar-main {
+    background: #111b47;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+}
+.comprar-main:hover {
+    background: #505f98;
+}
+.saiba-mais {
+    border: 2px solid #111b47;
+    text-align: center;
+    padding: 8px;
+}
+.saiba-mais:hover {
+    background: #505f98;
+    color: #ffffff;
+}
+
+@media (max-whidth: 1650px) {
+    .menu {
+        font-size: 200px;
+    }
+}
